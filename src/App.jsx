@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, NavLink, Link, useLocation } from 'react-router-dom'
+import { HashRouter, Routes, Route, NavLink, Link, useLocation } from 'react-router-dom'
 import './index.css'
 
 function ScrollToTop() {
@@ -873,7 +873,7 @@ function ContactPage() {
 /* ── App ── */
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -885,6 +885,6 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
