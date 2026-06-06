@@ -32,7 +32,7 @@ function Navbar() {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-inner">
         <Link to="/" className="nav-logo">
-          <img src="/logo.png" alt="Growth Harbour Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Growth Harbour Logo" className="logo-img" />
           Growth Harbour
         </Link>
         <div className="nav-links">
@@ -114,7 +114,7 @@ function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <div className="logo">
-            <img src="/logo.png" alt="Growth Harbour Logo" className="logo-img" />
+            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Growth Harbour Logo" className="logo-img" />
             Growth Harbour
           </div>
           <p>Growth Harbour Private Limited is a leading loan consultancy and financial advisory firm dedicated to connecting individuals and businesses with the right financial solutions across India.</p>
