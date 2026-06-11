@@ -394,7 +394,7 @@ function ServicesPage() {
                     </ul>
                   </div>
                   <div className="sfc-note">{s.note}</div>
-                  <Link to="/contact" className="btn-primary" style={{ marginTop: 20, display: 'inline-block' }}>Enquire About This Loan</Link>
+                  <Link to="/contact" className="btn-primary" style={{ marginTop: 20, display: 'inline-block' }}>Enquire About This Service</Link>
                 </div>
               </div>
             ))}
@@ -569,7 +569,7 @@ function DirectorsPage() {
   const govPoints = [
     'All 10 directors serve as Promoter Directors, collectively holding 100% shareholding in the company.',
     'The board meets quarterly to review operational performance, financial targets, and strategic expansion plans.',
-    'Each director is responsible for a specific vertical — covering loan advisory, compliance, operations, client relations, and business development.',
+    'Each director is responsible for a specific vertical — covering consulting advisory, compliance, operations, client relations, and business development.',
     'Growth Harbour maintains full compliance with MCA (Ministry of Corporate Affairs) regulations and annual ROC filing requirements.',
   ]
 
