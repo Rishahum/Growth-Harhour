@@ -750,7 +750,7 @@ function ContactPage() {
   const [openFaq, setOpenFaq] = useState(null)
 
   const contactDetails = [
-    { icon: '📧', label: 'Email Us', value: 'contact@growthharbour.in', sub: 'We respond within 4 business hours' },
+    { icon: '📧', label: 'Email Us', value: 'growthharbor7@gmail.com', sub: 'We respond within 4 business hours' },
     { icon: '📞', label: 'Call Us', value: '+91 98765 43210', sub: 'Mon–Sat, 9am–7pm IST' },
     { icon: '📍', label: 'Our Office', value: 'New Delhi, India', sub: 'Walk-ins welcome by appointment' },
     { icon: '💬', label: 'WhatsApp', value: '+91 98765 43210', sub: 'Quick queries & document sharing' },
