@@ -84,11 +84,11 @@ function Footer() {
     {
       title: 'Our Services',
       links: [
-        { label: 'Business Loans', to: '/services' },
-          { label: 'Secured Loans', to: '/services' },
-        { label: 'Unsecured Loans', to: '/services' },
-        { label: 'Emergency Loans', to: '/services' },
-        { label: 'Govt-Sponsored Loans', to: '/services' },
+        { label: 'Strategy Consulting', to: '/services' },
+        { label: 'Management Consulting', to: '/services' },
+        { label: 'Digital Transformation', to: '/services' },
+        { label: 'HR & Talent Consulting', to: '/services' },
+        { label: 'Financial Advisory', to: '/services' },
       ]
     },
     {
@@ -117,7 +117,7 @@ function Footer() {
             <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Growth Harbour Logo" className="logo-img" />
             Growth Harbour
           </div>
-          <p>Growth Harbour Private Limited is a leading loan consultancy and financial advisory firm dedicated to connecting individuals and businesses with the right financial solutions across India.</p>
+          <p>Growth Harbour Private Limited is a premier business and management consulting firm dedicated to helping organisations across India unlock their full potential through strategy, operations, digital innovation, and people excellence.</p>
           <p style={{ marginTop: 12, fontSize: '0.82rem', color: 'rgba(255,255,255,0.45)' }}>CIN: U65990DL2025PTC000000 | MSME Registered</p>
         </div>
         {cols.map(col => (
@@ -149,12 +149,12 @@ function Footer() {
 ══════════════════════════════════════════════ */
 function HomePage() {
   const whyUs = [
-    { icon: '🏦', title: '15+ Banking Partners', desc: 'We work with HDFC, Axis, SBI, Bajaj Finserv, Canara Bank, Bandhan Bank, Kotak Mahindra, ICICI, and more — giving you access to the widest range of loan products and the most competitive interest rates in the market.' },
-    { icon: '⚡', title: 'Fast & Hassle-Free Processing', desc: 'Most loan applications are processed within 48–72 hours. Our dedicated team handles documentation, lender coordination, and follow-ups so you don\'t have to. You focus on your goals; we handle the paperwork.' },
-    { icon: '🛡️', title: 'Zero Hidden Charges', desc: 'We believe in complete financial transparency. Every fee, charge, and term is disclosed upfront. What you see is what you get — no surprise deductions, no fine print traps, no post-disbursal shocks.' },
-    { icon: '👤', title: 'Dedicated Relationship Manager', desc: 'Every client is assigned a personal Relationship Manager who understands your financial profile, guides you through the entire process, and remains available for all future financial needs.' },
-    { icon: '📊', title: '98% Approval Success Rate', desc: 'Our deep understanding of lender eligibility criteria means we only recommend products you qualify for. This precision approach results in an industry-leading 98% loan approval success rate.' },
-    { icon: '🇮🇳', title: 'Government Scheme Expertise', desc: 'MUDRA, CGTMSE, Stand-Up India, Startup India — we are certified practitioners for all major government lending schemes and ensure our clients leverage every available subsidy and credit guarantee.' },
+    { icon: '🎯', title: 'Outcome-Driven Approach', desc: 'We don\'t just deliver reports — we deliver results. Every engagement is scoped around measurable business outcomes, and our success is defined by the tangible impact we create for your organisation.' },
+    { icon: '⚡', title: 'Agile & Fast Execution', desc: 'Business moves fast — so do we. Our lean consulting teams are structured for speed, cutting through bureaucracy to deliver actionable insights and implementable solutions within weeks, not months.' },
+    { icon: '🔍', title: 'Deep Industry Expertise', desc: 'Our consultants bring hands-on experience across 10+ sectors including financial services, retail, manufacturing, technology, and healthcare — ensuring advice that is grounded in sector-specific realities.' },
+    { icon: '👤', title: 'Dedicated Engagement Manager', desc: 'Every client is assigned a senior Engagement Manager who acts as your single point of contact — understanding your business deeply and ensuring complete alignment from strategy through to execution.' },
+    { icon: '📊', title: 'Data-Backed Insights', desc: 'Our recommendations are never based on gut feel alone. We combine primary research, industry benchmarking, and advanced data analytics to ensure every strategic decision is supported by hard evidence.' },
+    { icon: '🌱', title: 'Long-Term Partnership', desc: 'We invest in relationships, not transactions. Many of our clients have partnered with us across multiple projects over several years — a testament to the trust and consistent value we deliver.' },
   ]
 
   return (
@@ -163,26 +163,26 @@ function HomePage() {
       <section className="hero" id="home">
         <div className="hero-inner">
           <div className="hero-content">
-            <div className="hero-badge">🚀 India's Trusted Loan Consultancy &amp; Financial Advisory</div>
+            <div className="hero-badge">🚀 India's Trusted Business &amp; Management Consulting Firm</div>
             <h1>Your Growth is <span>Our Priority</span></h1>
             <p>
-              Growth Harbour Private Limited is a leading financial advisory and loan consultancy firm based in New Delhi. We bridge the gap between your ambitions and the capital required to achieve them — offering end-to-end loan facilitation across 5+ categories, backed by a network of 15+ banks and NBFCs. Whether you are an entrepreneur, a salaried professional, or a growing enterprise, we have the right solution for you.
+              Growth Harbour Private Limited is a premier consulting firm headquartered in New Delhi. We partner with organisations across India to solve their most complex business challenges — from shaping corporate strategy and transforming operations to driving digital innovation and building high-performance teams. Whether you are a startup, an MSME, or a large enterprise, we have the expertise to accelerate your growth.
             </p>
             <div className="hero-actions">
               <Link to="/contact" className="btn-primary">Get a Free Consultation</Link>
               <Link to="/services" className="btn-outline">Explore Our Services</Link>
             </div>
             <div className="hero-stats">
-              <div className="stat-item"><div className="num">80+</div><div className="label">Loans Facilitated</div></div>
-              <div className="stat-item"><div className="num">25yr</div><div className="label">Combined Experience</div></div>
-              <div className="stat-item"><div className="num">98%</div><div className="label">Success Rate</div></div>
+              <div className="stat-item"><div className="num">200+</div><div className="label">Projects Delivered</div></div>
+              <div className="stat-item"><div className="num">50+</div><div className="label">Expert Consultants</div></div>
+              <div className="stat-item"><div className="num">95%</div><div className="label">Client Retention</div></div>
             </div>
           </div>
           <div className="hero-visual">
-            <div className="hero-card accent"><div className="icon">🏦</div><div className="stat">15+</div><div className="stat-label">Banking Partners</div></div>
-            <div className="hero-card"><div className="icon">🤝</div><div className="stat">70+</div><div className="stat-label">Team Members</div></div>
-            <div className="hero-card"><div className="icon">📈</div><div className="stat">95%</div><div className="stat-label">Client Satisfaction</div></div>
-            <div className="hero-card accent"><div className="icon">✅</div><div className="stat">98%</div><div className="stat-label">Approval Rate</div></div>
+            <div className="hero-card accent"><div className="icon">🎯</div><div className="stat">10+</div><div className="stat-label">Industries Served</div></div>
+            <div className="hero-card"><div className="icon">🤝</div><div className="stat">50+</div><div className="stat-label">Expert Consultants</div></div>
+            <div className="hero-card"><div className="icon">📈</div><div className="stat">95%</div><div className="stat-label">Client Retention</div></div>
+            <div className="hero-card accent"><div className="icon">✅</div><div className="stat">200+</div><div className="stat-label">Projects Delivered</div></div>
           </div>
         </div>
       </section>
@@ -191,10 +191,10 @@ function HomePage() {
       <div className="stats">
         <div className="stats-grid">
           {[
-            { num: '25+', desc: 'Years of Combined Experience', sub: 'Across banking & lending' },
-            { num: '80+', desc: 'Loans Successfully Facilitated', sub: 'Across all categories' },
-            { num: '95%', desc: 'Client Satisfaction Rate', sub: 'Consistently year-on-year' },
-            { num: '98%', desc: 'Loan Approval Success Rate', sub: 'Best-match lender process' }
+            { num: '12+', desc: 'Years of Combined Experience', sub: 'Across strategy & operations' },
+            { num: '200+', desc: 'Projects Successfully Delivered', sub: 'Across all service lines' },
+            { num: '95%', desc: 'Client Retention Rate', sub: 'Consistently year-on-year' },
+            { num: '10+', desc: 'Industries Served', sub: 'From startups to enterprises' }
           ].map(s => (
             <div className="stat-box" key={s.desc}>
               <div className="number">{s.num}</div>
@@ -210,9 +210,9 @@ function HomePage() {
         <div className="section-inner">
           <div className="section-header center">
             <div className="section-tag">What We Do</div>
-            <h2 className="section-title">Loan Solutions Built for <span>Every Need</span></h2>
+            <h2 className="section-title">Consulting Solutions Built for <span>Every Challenge</span></h2>
             <p className="section-subtitle">
-              From business funding and government-sponsored schemes to secured, unsecured, and emergency credit — we collaborate with India's leading banks and NBFCs to ensure you always receive the most competitive offer available.
+              From shaping corporate strategy and streamlining operations to driving digital transformation and developing high-performance teams — we bring the expertise, frameworks, and hands-on support your organisation needs to grow.
             </p>
           </div>
           <div className="services-grid">
@@ -226,7 +226,7 @@ function HomePage() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: 40 }}>
-            <Link to="/services" className="btn-primary">View All 5 Services</Link>
+            <Link to="/services" className="btn-primary">View All 5 Practice Areas</Link>
           </div>
         </div>
       </section>
@@ -238,7 +238,7 @@ function HomePage() {
             <div className="section-tag">Why Choose Us</div>
             <h2 className="section-title">What Sets Growth Harbour <span>Apart</span></h2>
             <p className="section-subtitle">
-              We don't just connect you to a loan — we become your long-term financial partner, guiding every step of the way with expertise, speed, and integrity.
+              We don't just deliver strategies — we become your long-term growth partner, combining deep expertise with practical execution to drive real, measurable business impact.
             </p>
           </div>
           <div className="why-grid">
@@ -258,7 +258,7 @@ function HomePage() {
         <div className="cta-strip-inner">
           <div>
             <h2>Ready to Take the Next Step?</h2>
-            <p>Talk to our financial advisors today — free consultation, no obligations.</p>
+            <p>Talk to our consultants today — free discovery call, no obligations.</p>
           </div>
           <div className="cta-strip-actions">
             <Link to="/contact" className="btn-primary">Book Free Consultation</Link>
@@ -275,89 +275,89 @@ function HomePage() {
 ══════════════════════════════════════════════ */
 const services = [
   {
-    icon: '🏢',
-    title: 'Business Loans',
-    shortDesc: 'Whether launching a startup or scaling an enterprise, our business loan solutions connect you with PSU banks and top NBFCs for working capital, expansion, and operations funding.',
-    desc: 'A business loan is purpose-built funding designed to help entrepreneurs, MSMEs, and established companies start, grow, or sustain their operations. At Growth Harbour, we understand that no two businesses are alike — which is why we offer a consultative approach to match you with the most suitable lender and product from our network of 15+ banks and NBFCs.',
+    icon: '🎯',
+    title: 'Strategy Consulting',
+    shortDesc: 'Whether you\'re a startup defining direction or an enterprise navigating change, our strategy consultants help you set clear goals, outmanoeuvre competition, and build a roadmap for sustainable growth.',
+    desc: 'Strategy consulting is the cornerstone of what we do at Growth Harbour. We work directly with founders, CEOs, and senior leadership teams to tackle the most critical questions facing their organisations — where to compete, how to win, and how to sustain advantage over time. Our approach combines rigorous market analysis, competitive intelligence, and collaborative workshops to produce strategies that are bold yet realistic.',
     features: [
-      'Working Capital Loans for managing daily operations & cash flow',
-      'Term Loans for machinery, infrastructure, and business expansion',
-      'MSME Loans under government priority-sector lending schemes',
-      'Startup Funding with minimal documentation requirements',
-      'Overdraft (OD) & Cash Credit (CC) facilities',
-      'Turnover-based loans using P&L and bank statements',
-      'Loan amounts from ₹1 Lakh to ₹10 Crore+',
-      'Repayment tenures up to 7 years with flexible EMI structures',
+      'Corporate strategy development — vision, mission, and long-term roadmaps',
+      'Market entry strategy for new geographies, segments, and products',
+      'Competitive positioning and differentiation frameworks',
+      'Business model design and revenue stream diversification',
+      'Strategic planning workshops and facilitated leadership offsites',
+      'Portfolio strategy and business unit prioritisation',
+      'Growth acceleration plans for startups and MSMEs',
+      'Feasibility studies and go-to-market strategy for new ventures',
     ],
-    note: 'Eligibility: Min. 1 year in business | ITR filing preferred | GST registration an advantage'
+    note: 'Ideal for: Startups seeking direction | MSMEs planning scale-up | Enterprises undergoing transformation'
   },
   {
-    icon: '🔐',
-    title: 'Secured Loans',
-    shortDesc: 'Pledge an asset, unlock large capital. Secured loans offer higher loan amounts and lower interest rates — ideal for substantial financial needs backed by property, gold, or investments.',
-    desc: 'A secured loan is backed by collateral — an asset of value you pledge to the lender as security against the borrowing. Because the lender\'s risk is reduced, you benefit from significantly lower interest rates and access to larger loan amounts. Growth Harbour evaluates your assets and connects you with the lender offering the best Loan-to-Value (LTV) ratio and most favourable terms.',
+    icon: '⚙️',
+    title: 'Management Consulting',
+    shortDesc: 'Operational excellence is not an accident — it\'s engineered. Our management consultants identify inefficiencies, redesign processes, and build the systems your organisation needs to perform at its peak.',
+    desc: 'Great strategy means nothing without the operational capability to execute it. Growth Harbour\'s management consulting practice helps organisations streamline how they work — removing bottlenecks, eliminating waste, and building scalable operating models that deliver consistent results. We embed ourselves in your business to understand your processes from the inside, then co-create solutions your teams can actually implement.',
     features: [
-      'Loan Against Property (LAP) — residential, commercial & industrial',
-      'Gold Loans — quick liquidity against your gold jewellery or coins',
-      'Vehicle Loans — two-wheelers, passenger cars & commercial vehicles',
-      'Loans Against Securities — shares, mutual funds & bonds',
-      'Fixed Deposit (FD) backed credit lines',
-      'Loan amounts from ₹1 Lakh up to ₹10 Crore based on asset valuation',
-      'Interest rates starting from 8.5% p.a.',
-      'Repayment tenure up to 20 years for property-backed loans',
+      'Operating model design and organisational restructuring',
+      'Business process reengineering (BPR) and workflow optimisation',
+      'Performance management systems and KPI framework design',
+      'Cost optimisation and resource allocation reviews',
+      'Supply chain and procurement process improvement',
+      'Change management planning and stakeholder communication',
+      'Project management office (PMO) setup and governance',
+      'Post-merger integration support and operational alignment',
     ],
-    note: 'Eligibility: Clear title/ownership of asset | Minimum credit score 650 | Income proof required'
+    note: 'Ideal for: Growing companies hitting operational ceilings | Enterprises seeking cost efficiency | Post-merger integrations'
   },
   {
-    icon: '🤝',
-    title: 'Unsecured Loans',
-    shortDesc: 'No collateral? No problem. Unsecured loans are disbursed based on your creditworthiness and income — fast, paperless, and flexible for salaried professionals and self-employed individuals alike.',
-    desc: 'Not everyone has assets to pledge — and that should never be a barrier to accessing credit. Our unsecured loan services offer collateral-free funding based purely on your income profile, employment stability, and credit history. Ideal for salaried professionals, self-employed individuals, and small business owners who need quick funds without tying up their assets.',
+    icon: '💻',
+    title: 'Digital Transformation',
+    shortDesc: 'Digital is no longer optional — it\'s existential. We help organisations build and execute digital strategies that modernise operations, enhance customer experience, and unlock new revenue opportunities.',
+    desc: 'Digital transformation is one of the most complex and consequential journeys an organisation can undertake. Growth Harbour guides businesses through every stage — from assessing digital maturity and defining a transformation roadmap, to selecting the right technology platforms and managing the organisational change that comes with them. Our consultants combine strategic thinking with practical technology expertise to ensure your digital investments deliver real business value.',
     features: [
-      'Personal Loans for medical bills, travel, wedding, or any personal use',
-      'Professional Loans for doctors, CAs, engineers, lawyers & architects',
-      'Instant digital loans with paperless KYC and 24–48 hour disbursal',
-      'Business loans for SMEs with strong revenue but limited tangible assets',
-      'Credit lines and revolving credit for working capital needs',
-      'Loan amounts up to ₹40 Lakh for salaried; ₹50 Lakh for self-employed',
-      'Flexible tenures from 12 to 60 months',
-      'Minimal documents: Aadhaar, PAN, bank statements, salary slips',
+      'Digital maturity assessment and transformation roadmap development',
+      'Technology selection, vendor evaluation, and RFP management',
+      'ERP, CRM, and HRMS implementation advisory',
+      'AI and automation opportunity identification and deployment',
+      'Data strategy, analytics architecture, and BI implementation',
+      'Cloud migration strategy and hybrid infrastructure planning',
+      'Customer experience (CX) redesign through digital channels',
+      'Cybersecurity posture assessment and risk mitigation planning',
     ],
-    note: 'Eligibility: Min. credit score 700 | Salaried: min. ₹25,000 net monthly income | Self-employed: 2-year ITR'
+    note: 'Ideal for: Businesses digitising operations | Enterprises adopting AI & automation | Companies improving customer experience'
   },
   {
-    icon: '🚨',
-    title: 'Emergency & Miscellaneous Loans',
-    shortDesc: 'Life doesn\'t always give advance notice. Our emergency loan solutions are built for speed — fast-tracked applications and same-day processing for urgent situations.',
-    desc: 'Financial emergencies demand immediate action. Whether it\'s an unexpected hospital bill, urgent home repairs, or a sudden personal crisis, Growth Harbour\'s emergency loan service is designed to move as fast as you need it to. We fast-track your application, liaise directly with lenders, and prioritize the fastest possible disbursement so that money reaches you when it matters most.',
+    icon: '👥',
+    title: 'HR & Talent Consulting',
+    shortDesc: 'Your people are your most valuable asset. Our HR consultants help you attract, develop, and retain top talent — building the organisational culture and people systems that power long-term success.',
+    desc: 'In a competitive talent market, the organisations that win are those that invest in their people strategy with the same rigour they apply to their business strategy. Growth Harbour\'s HR consulting practice helps companies design people-first systems — from talent acquisition and onboarding to performance management, leadership development, and culture transformation. We ensure your organisation has the human capital it needs to execute its strategy.',
     features: [
-      'Medical Emergency Loans — hospital bills, surgery, critical care & ICU costs',
-      'Travel Emergency Loans — last-minute travel, family emergencies abroad',
-      'Home Repair Loans — urgent structural, electrical & utility repairs',
-      'Advance Salary Loans for salaried individuals against next paycheck',
-      'Same-day or next-day processing for pre-approved customer profiles',
-      'Digital KYC for minimal paperwork and faster approval',
-      'Available 7 days a week including public holidays',
-      'Loan amounts from ₹10,000 to ₹5 Lakh for emergency purposes',
+      'HR function assessment and people strategy development',
+      'Organisational design and workforce planning',
+      'Talent acquisition strategy and employer branding',
+      'Performance appraisal system design and implementation',
+      'Leadership development programmes and succession planning',
+      'Employee engagement surveys and culture transformation initiatives',
+      'Compensation benchmarking and total rewards strategy',
+      'HR policy documentation, employee handbooks, and compliance frameworks',
     ],
-    note: 'Eligibility: Existing customer advantage | Salaried & self-employed eligible | Emergency documentation accepted'
+    note: 'Ideal for: Startups building their first HR function | Scaling companies standardising people processes | Enterprises transforming culture'
   },
   {
-    icon: '🏛️',
-    title: 'Government-Sponsored Loans',
-    shortDesc: 'The Government of India offers powerful subsidy-linked and priority-sector lending schemes. Growth Harbour is your expert guide through MUDRA, CGTMSE, Stand-Up India, and more.',
-    desc: 'The Indian government has launched several transformative lending schemes aimed at empowering entrepreneurs, women, farmers, and marginalized communities — often at subsidized interest rates with credit guarantees. These schemes remain under-utilized because many applicants are unaware of them or struggle with the application process. Growth Harbour bridges this gap with certified expertise and end-to-end support.',
+    icon: '📊',
+    title: 'Financial Advisory',
+    shortDesc: 'Sound financial decision-making is the backbone of every successful business. Our financial advisors help you plan, optimise, and protect your organisation\'s financial health for the long term.',
+    desc: 'Growth Harbour\'s financial advisory practice provides businesses with the financial clarity and expertise they need to make confident decisions. Whether you\'re planning for growth, navigating a turnaround, preparing for investment, or optimising your cost base, our advisors bring deep financial acumen and commercial judgement to every engagement. We translate complex financial data into actionable insights your leadership team can act on.',
     features: [
-      'PM MUDRA Yojana — Shishu (up to ₹50K), Kishore (₹50K–₹5L), Tarun (₹5L–₹10L)',
-      'CGTMSE — Credit Guarantee Fund for MSMEs: collateral-free up to ₹2 Crore',
-      'Stand-Up India — Dedicated loans for SC/ST and women entrepreneurs',
-      'Startup India Seed Fund — Early-stage financing for registered startups',
-      'PM SVANidhi — Micro-credit for urban street vendors',
-      'Kisan Credit Card (KCC) — Revolving credit for agriculture & allied activities',
-      'PMEGP (Prime Minister\'s Employment Generation Programme)',
-      'NHB Schemes — Affordable housing loans with interest subvention',
+      'Business financial planning, budgeting, and forecasting',
+      'Cash flow modelling and working capital optimisation',
+      'Investment readiness and fundraising advisory for startups',
+      'Financial due diligence for acquisitions and partnerships',
+      'Profitability analysis and margin improvement programmes',
+      'Management information system (MIS) design and reporting',
+      'Cost reduction and spend analytics',
+      'Financial controls assessment and internal audit support',
     ],
-    note: 'Eligibility varies by scheme | Growth Harbour assists with complete documentation & government portal registration'
+    note: 'Ideal for: Startups seeking investment | MSMEs improving profitability | Enterprises optimising financial performance'
   }
 ]
 
@@ -366,15 +366,15 @@ function ServicesPage() {
     <Page>
       <PageBanner
         title="Our Services"
-        subtitle="End-to-end loan facilitation across 5 categories — from business funding and government-sponsored schemes to secured, unsecured, and emergency credit."
+        subtitle="End-to-end consulting across 5 practice areas — from strategy and management to digital transformation, HR, and financial advisory."
       />
       <section className="section" style={{ background: 'var(--gray-50)' }}>
         <div className="section-inner">
           <div className="section-header center">
             <div className="section-tag">What We Offer</div>
-            <h2 className="section-title">Comprehensive Loan Solutions <span>Under One Roof</span></h2>
+            <h2 className="section-title">Comprehensive Consulting Solutions <span>Under One Roof</span></h2>
             <p className="section-subtitle">
-              We collaborate with 15+ banks and NBFCs — including HDFC Bank, Axis Bank, SBI, Bajaj Finserv, Canara Bank, and Kotak Mahindra — to ensure every client receives a tailored, competitively priced loan product.
+              We serve clients across 10+ industries — including financial services, technology, retail, manufacturing, and healthcare — delivering tailored consulting engagements that create measurable, lasting impact.
             </p>
           </div>
 
@@ -400,11 +400,11 @@ function ServicesPage() {
             ))}
           </div>
 
-          {/* Bank partners */}
+          {/* Industry partners */}
           <div className="banks-section">
-            <p className="banks-label">Our Lending Partners</p>
+            <p className="banks-label">Industries We Serve</p>
             <div className="banks-grid">
-              {['HDFC Bank','Axis Bank','SBI','Bajaj Finserv','Canara Bank','ICICI Bank','Kotak Mahindra','Bandhan Bank','Bank of Baroda','Union Bank of India','PNB','IDFC First Bank'].map(b => (
+              {['Financial Services','Technology','Retail & E-commerce','Manufacturing','Healthcare','Education','Real Estate','Logistics','FMCG','Hospitality','Pharmaceuticals','Media & Entertainment'].map(b => (
                 <div className="bank-badge" key={b}>{b}</div>
               ))}
             </div>
@@ -420,24 +420,24 @@ function ServicesPage() {
 ══════════════════════════════════════════════ */
 function AboutPage() {
   const values = [
-    { icon: '🤝', title: 'Client First', desc: 'Every decision we make is guided by one question: is this in our client\'s best interest? Your success and satisfaction are the true measure of our performance.' },
-    { icon: '🔍', title: 'Transparency', desc: 'We believe financial clarity is a right, not a privilege. Every charge, term, and condition is explained in plain language before you sign anything.' },
-    { icon: '⚡', title: 'Speed & Efficiency', desc: 'Time is money. Our streamlined processes and lender relationships ensure we move as fast as possible without compromising accuracy or compliance.' },
-    { icon: '🌱', title: 'Long-Term Partnership', desc: 'We are not a one-time service. We aim to be your financial partner for life — from your first business loan to your child\'s education fund and beyond.' },
+    { icon: '🤝', title: 'Client First', desc: 'Every decision we make is guided by one question: is this truly in our client\'s best interest? Your growth and satisfaction are the only measure of our success.' },
+    { icon: '🔍', title: 'Transparency', desc: 'We believe in complete clarity — on scope, timelines, fees, and findings. Every recommendation is explained in plain language with the evidence to back it up.' },
+    { icon: '⚡', title: 'Speed & Efficiency', desc: 'Time is strategy. Our lean teams and structured methodologies ensure we deliver actionable insights and implementable solutions faster than the industry norm.' },
+    { icon: '🌱', title: 'Long-Term Partnership', desc: 'We are not a one-time vendor. We aim to be your strategic partner for the long haul — growing alongside your business and evolving our support as your needs change.' },
   ]
 
   const milestones = [
     { year: '2025', event: 'Growth Harbour Private Limited incorporated in New Delhi with a founding team of 10 directors.' },
-    { year: '2025', event: 'Empanelled with 15+ leading banks and NBFCs across India.' },
-    { year: '2025', event: 'Launched Government Scheme Advisory wing — dedicated MUDRA and CGTMSE facilitation.' },
-    { year: '2026', event: 'Expanded team to 70+ financial advisors and relationship managers across Delhi NCR.' },
+    { year: '2025', event: 'Launched 5 core consulting practice areas: Strategy, Management, Digital, HR & Talent, and Financial Advisory.' },
+    { year: '2025', event: 'Onboarded first 50 clients across Delhi NCR, spanning technology, retail, and financial services sectors.' },
+    { year: '2026', event: 'Expanded team to 50+ consultants and analysts; crossed 200 project deliveries across 10+ industries.' },
   ]
 
   return (
     <Page>
       <PageBanner
         title="About Us"
-        subtitle="Growth Harbour Private Limited — dedicated financial partners committed to making credit accessible, transparent, and affordable for every Indian."
+        subtitle="Growth Harbour Private Limited — dedicated consulting partners committed to helping organisations across India grow smarter, operate better, and lead with confidence."
       />
 
       {/* Company story */}
@@ -453,15 +453,15 @@ function AboutPage() {
             </div>
             <div className="about-text">
               <div className="section-tag">Our Story</div>
-              <h2 className="section-title">Built to Bridge the Gap Between <span>Ambition & Capital</span></h2>
+              <h2 className="section-title">Built to Bridge the Gap Between <span>Ambition & Achievement</span></h2>
               <p className="about-para">
-                Growth Harbour Private Limited was incorporated with a single, unwavering purpose: to make financial empowerment accessible to every Indian — from the first-time entrepreneur in a tier-2 city to a growing enterprise in the metro. We understood that in India, the gap between ambition and capital is often bridged not by luck, but by the right financial partner.
+                Growth Harbour Private Limited was incorporated with a single, unwavering purpose: to make world-class consulting accessible to every Indian organisation — from the first-time founder in a tier-2 city to a scaling enterprise in the metro. We understood that in India, the gap between ambition and achievement is often bridged not by luck, but by the right strategic partner.
               </p>
               <p className="about-para">
-                Founded by a team of 10 seasoned finance professionals — each with deep expertise in banking, lending, and financial advisory — Growth Harbour operates at the intersection of trust, expertise, and innovation. We don't just process loan applications; we become your strategic financial companion, guiding you from the very first enquiry through to the final disbursement.
+                Founded by a team of 10 seasoned business professionals — each with deep expertise in strategy, operations, technology, and people management — Growth Harbour operates at the intersection of insight, execution, and trust. We don't just hand over reports and walk away; we become embedded partners who stay accountable for outcomes long after the engagement ends.
               </p>
               <p className="about-para">
-                Our network spans 15+ leading banks and NBFCs including HDFC Bank, Axis Bank, Bajaj Finserv, SBI, Canara Bank, ICICI Bank, Kotak Mahindra Bank, and more — ensuring that every client receives the most competitive rate possible, matched precisely to their financial profile.
+                Our practice spans 5 core consulting areas — Strategy, Management, Digital Transformation, HR & Talent, and Financial Advisory — serving clients across 10+ industries including financial services, technology, retail, manufacturing, and healthcare across Delhi NCR and beyond.
               </p>
             </div>
           </div>
@@ -475,12 +475,12 @@ function AboutPage() {
             <div className="mv-card mission">
               <div className="mv-icon">🎯</div>
               <h3>Our Mission</h3>
-              <p>To simplify access to credit and financial services for individuals and businesses across India — enabling sustainable growth through transparent, affordable, and personalized loan solutions that truly fit each client's unique needs and goals.</p>
+              <p>To make high-impact consulting accessible to every ambitious organisation across India — enabling sustainable growth through honest, expert-led advisory that is grounded in data, delivered with speed, and measured by real business outcomes.</p>
             </div>
             <div className="mv-card vision">
               <div className="mv-icon">🔭</div>
               <h3>Our Vision</h3>
-              <p>To become India's most trusted loan consultancy — a company where every client walks out not just with the funding they need, but with financial clarity, confidence, and a clear, well-planned path forward toward their long-term goals.</p>
+              <p>To become India's most trusted consulting firm — a company where every client walks away not just with a strategy, but with the clarity, capability, and confidence to execute it and achieve their long-term business goals.</p>
             </div>
           </div>
         </div>
@@ -528,10 +528,10 @@ function AboutPage() {
       <div className="stats">
         <div className="stats-grid">
           {[
-            { num: '15+', desc: 'Banking & NBFC Partners', sub: 'For best-rate matching' },
-            { num: '80+', desc: 'Loans Facilitated', sub: 'Across all categories' },
-            { num: '70+', desc: 'Financial Advisors', sub: 'Across Delhi NCR' },
-            { num: '98%', desc: 'Approval Success Rate', sub: 'Industry-leading precision' }
+            { num: '10+', desc: 'Industries Served', sub: 'From startups to enterprises' },
+            { num: '200+', desc: 'Projects Delivered', sub: 'Across all practice areas' },
+            { num: '50+', desc: 'Expert Consultants', sub: 'Across Delhi NCR' },
+            { num: '95%', desc: 'Client Retention Rate', sub: 'Consistently year-on-year' }
           ].map(s => (
             <div className="stat-box" key={s.desc}>
               <div className="number">{s.num}</div>
@@ -577,7 +577,7 @@ function DirectorsPage() {
     <Page>
       <PageBanner
         title="Board of Directors"
-        subtitle="Meet the founding promoter directors who drive the vision, governance, and growth of Growth Harbour Private Limited."
+        subtitle="Meet the founding promoter directors who drive the vision, governance, and consulting excellence of Growth Harbour Private Limited."
       />
 
       <section className="section">
@@ -587,7 +587,7 @@ function DirectorsPage() {
             <div className="section-tag">Leadership</div>
             <h2 className="section-title">A Board Built on <span>Expertise & Commitment</span></h2>
             <p className="about-para" style={{ maxWidth: 720 }}>
-              Growth Harbour Private Limited is led by a diverse and experienced board of 10 Promoter Directors, each bringing a unique perspective from banking, finance, operations, and entrepreneurship. Together, they ensure the company remains client-focused, compliant, and consistently delivers on its promise of transparent, efficient loan facilitation.
+              Growth Harbour Private Limited is led by a diverse and experienced board of 10 Promoter Directors, each bringing a unique perspective from strategy, operations, technology, finance, and people management. Together, they ensure the firm remains client-focused, compliant, and consistently delivers on its promise of transparent, high-impact consulting.
             </p>
           </div>
 
@@ -635,43 +635,43 @@ function DirectorsPage() {
 const testimonials = [
   {
     stars: 5,
-    quote: 'I approached Growth Harbour for a business loan to expand my electronics store in Karol Bagh. Within 4 working days, I had a term loan of ₹25 Lakh sanctioned from Axis Bank at a rate I couldn\'t have negotiated myself. The relationship manager handled every document and followed up with the bank on my behalf. Truly exceptional service.',
+    quote: 'Growth Harbour\'s strategy team helped us completely rethink our go-to-market approach. Within 3 months of implementing their recommendations, our revenue from new customer segments grew by 40%. Their consultants didn\'t just hand over a slide deck — they stayed with us through execution and made sure the strategy actually landed.',
     avatar: '👨‍💼',
     name: 'Ramesh Gupta',
-    title: 'Owner, Gupta Electronics, Delhi',
-    loan: 'Business Loan — ₹25 Lakh'
+    title: 'Founder & CEO, Gupta Retail Group, Delhi',
+    loan: 'Strategy Consulting Engagement'
   },
   {
     stars: 5,
-    quote: 'We are a small tailoring unit and had no idea about MUDRA loans. Growth Harbour not only explained the entire PM MUDRA Yojana scheme but also helped us with registration on the Udyam portal and got us a Kishore loan of ₹4 Lakh with zero collateral. This changed everything for our business.',
+    quote: 'We were struggling with high operational costs and slow processes across our manufacturing unit. Growth Harbour\'s management consulting team mapped every workflow, identified redundancies we had never even noticed, and redesigned our operations from the ground up. We reduced operational costs by 22% in the first six months.',
     avatar: '👩‍🦱',
     name: 'Sunita Verma',
-    title: 'Co-owner, Verma Garments, Rohini',
-    loan: 'PM MUDRA Loan — ₹4 Lakh'
+    title: 'Operations Director, Verma Industries, Noida',
+    loan: 'Management Consulting Engagement'
   },
   {
     stars: 5,
-    quote: 'My father had a cardiac emergency and the hospital required an advance of ₹3 Lakh immediately. I called Growth Harbour at 9 PM and by noon the next day, a personal loan was disbursed directly to the hospital. I cannot put into words how much that swift action meant to my family during such a difficult time.',
+    quote: 'Our digital transformation project had stalled twice before we brought in Growth Harbour. They cut through the complexity, selected the right ERP vendor for our size, managed the implementation, and trained our team. For the first time, our finance, sales, and inventory are all talking to each other in real time.',
     avatar: '👨‍💻',
     name: 'Vikram Singh',
-    title: 'Software Engineer, Gurugram',
-    loan: 'Emergency Medical Loan — ₹3 Lakh'
+    title: 'CEO, TechNova Solutions, Gurugram',
+    loan: 'Digital Transformation Engagement'
   },
   {
     stars: 5,
-    quote: 'As a practicing CA, I needed a professional loan to set up my own firm. Growth Harbour got me an unsecured professional loan from Bajaj Finserv at 10.5% p.a. — lower than what my own bank offered. The documentation was minimal and the disbursal was in 48 hours. I would recommend them to every professional.',
+    quote: 'As we scaled from 30 to 120 employees in under two years, our HR processes simply couldn\'t keep up. Growth Harbour built our entire people infrastructure — from appraisal systems and compensation bands to culture programmes and a proper onboarding process. Our attrition dropped from 34% to 11% within a year.',
     avatar: '👩‍💼',
     name: 'Anjali Desai',
-    title: 'Chartered Accountant, South Delhi',
-    loan: 'Professional Loan — ₹10 Lakh'
+    title: 'Co-founder, Desai Digital, South Delhi',
+    loan: 'HR & Talent Consulting Engagement'
   },
   {
     stars: 5,
-    quote: 'I wanted to expand my farm by buying additional equipment but didn\'t know how to apply for a Kisan Credit Card. Growth Harbour guided me through the entire process with the local branch of Canara Bank. My KCC limit of ₹2 Lakh was approved in 10 days. For a farmer like me, this kind of support is invaluable.',
-    avatar: '🧑‍🌾',
+    quote: 'Growth Harbour\'s financial advisory team helped us build a proper business plan and financial model ahead of our Series A fundraise. Their investor readiness work was exceptional — they knew exactly what questions investors would ask and helped us build the answers into our narrative. We closed our round within 10 weeks.',
+    avatar: '🧑‍💼',
     name: 'Ravi Kumar',
-    title: 'Farmer, Haryana',
-    loan: 'Kisan Credit Card — ₹2 Lakh'
+    title: 'Founder, AgriTech Ventures, Haryana',
+    loan: 'Financial Advisory Engagement'
   }
 ]
 
@@ -680,15 +680,15 @@ function TestimonialsPage() {
     <Page>
       <PageBanner
         title="Client Testimonials"
-        subtitle="Real stories from real clients. Discover how Growth Harbour has helped individuals, entrepreneurs, students, and families achieve their financial goals."
+        subtitle="Real stories from real clients. Discover how Growth Harbour has helped startups, MSMEs, and enterprises across India grow faster, operate smarter, and achieve their goals."
       />
 
       {/* Stats bar */}
       <div className="testi-stats">
-        <div className="testi-stat"><span className="ts-num">500+</span><span className="ts-label">Happy Clients</span></div>
+        <div className="testi-stat"><span className="ts-num">200+</span><span className="ts-label">Projects Delivered</span></div>
         <div className="testi-stat"><span className="ts-num">4.9/5</span><span className="ts-label">Average Rating</span></div>
-        <div className="testi-stat"><span className="ts-num">98%</span><span className="ts-label">Would Recommend</span></div>
-        <div className="testi-stat"><span className="ts-num">5</span><span className="ts-label">Loan Categories</span></div>
+        <div className="testi-stat"><span className="ts-num">95%</span><span className="ts-label">Client Retention</span></div>
+        <div className="testi-stat"><span className="ts-num">5</span><span className="ts-label">Practice Areas</span></div>
       </div>
 
       <section className="section testimonials">
@@ -697,7 +697,7 @@ function TestimonialsPage() {
             <div className="section-tag">Client Stories</div>
             <h2 className="section-title">What Our Clients <span>Say About Us</span></h2>
             <p className="section-subtitle">
-              These are real experiences shared by our clients — entrepreneurs, students, working professionals, and families — who trusted Growth Harbour with their most important financial decisions.
+              These are real experiences shared by our clients — founders, business owners, and enterprise leaders — who trusted Growth Harbour to help them navigate their most important business challenges.
             </p>
           </div>
           <div className="testimonials-grid">
@@ -724,7 +724,7 @@ function TestimonialsPage() {
         <div className="cta-strip-inner">
           <div>
             <h2>Join Our Growing Family of Satisfied Clients</h2>
-            <p>Talk to a financial advisor today — free consultation, zero obligations, complete confidentiality.</p>
+            <p>Talk to a consultant today — free discovery call, zero obligations, complete confidentiality.</p>
           </div>
           <div className="cta-strip-actions">
             <Link to="/contact" className="btn-primary">Get Free Consultation</Link>
@@ -739,11 +739,11 @@ function TestimonialsPage() {
    CONTACT PAGE
 ══════════════════════════════════════════════ */
 const faqs = [
-  { q: 'How long does it take to get a loan approved?', a: 'Most loan approvals happen within 48–72 working hours for unsecured loans. Secured loans and government-scheme loans may take 5–10 working days depending on documentation and lender verification requirements.' },
-  { q: 'Do you charge any fee for your consultancy service?', a: 'Our initial consultation is completely free. We work on a success-fee model — our service charge is a small, transparent percentage of the disbursed loan amount, disclosed upfront before you proceed.' },
-  { q: 'What documents are generally required for a loan?', a: 'Typically: Aadhaar & PAN card, last 3 months\' salary slips or 2 years\' ITR (for self-employed), 6 months\' bank statements, address proof, and business registration (for business loans). Your Relationship Manager will provide a precise checklist.' },
-  { q: 'Can I apply if I have a low CIBIL score?', a: 'It depends on the loan type. For secured loans, a lower credit score is often acceptable if your collateral is strong. For unsecured loans, we can suggest lenders who accept scores from 600+, or guide you on steps to improve your score quickly.' },
-  { q: 'Do you help with government loan schemes like MUDRA?', a: 'Yes — this is one of our specializations. We handle end-to-end support for PM MUDRA Yojana, CGTMSE, Stand-Up India, Startup India Seed Fund, and other government schemes including portal registration and documentation.' },
+  { q: 'How long does a typical consulting engagement take?', a: 'It depends on the scope. A focused strategy or diagnostic project typically runs 4–8 weeks. A full-scale transformation engagement — covering strategy through implementation — can span 3–6 months. We scope every project clearly upfront so you know exactly what to expect.' },
+  { q: 'Do you charge for the initial consultation?', a: 'No — our initial discovery call is completely free with no obligations. We use it to understand your business, your challenges, and your goals before we propose any engagement. You only pay once we agree on a defined scope and deliverables.' },
+  { q: 'How do you price your consulting engagements?', a: 'We offer flexible pricing models — fixed-fee project pricing for well-defined scopes, and retainer-based arrangements for ongoing advisory. All fees are discussed and agreed upon transparently before any work begins. There are no hidden charges.' },
+  { q: 'Do you work with small businesses and startups, or only large enterprises?', a: 'We work with organisations of all sizes — from early-stage startups to established MSMEs and large enterprises. Our engagements are scaled to suit your budget and stage of growth. Many of our most impactful projects have been with growing SMEs.' },
+  { q: 'What industries do you specialise in?', a: 'Our consultants bring hands-on experience across 10+ industries including financial services, technology, retail, manufacturing, healthcare, education, logistics, and FMCG. We match the right consultant to your sector so you always get advice grounded in industry reality.' },
 ]
 
 function ContactPage() {
@@ -760,16 +760,16 @@ function ContactPage() {
     <Page>
       <PageBanner
         title="Contact Us"
-        subtitle="Reach out to our team for a free, no-obligation consultation. We're here to help you find the right financial solution."
+        subtitle="Reach out to our team for a free discovery call. We're here to understand your challenges and explore how we can help your organisation grow."
       />
 
       <section className="section">
         <div className="section-inner">
           <div className="contact-info" style={{ maxWidth: 600, margin: '0 auto' }}>
             <div className="section-tag">Get In Touch</div>
-            <h2 className="section-title" style={{ fontSize: '1.8rem' }}>Let's Find the Right <span style={{ color: 'var(--primary)' }}>Loan For You</span></h2>
+            <h2 className="section-title" style={{ fontSize: '1.8rem' }}>Let's Solve Your <span style={{ color: 'var(--primary)' }}>Toughest Business Challenges</span></h2>
             <p style={{ color: 'var(--gray-600)', marginBottom: 32, lineHeight: 1.7 }}>
-              Whether you're ready to apply or just exploring your options, our advisors are here to give you honest, expert guidance — completely free of charge. Reach out to us through any of the channels below.
+              Whether you have a specific project in mind or just want to explore how consulting can help your organisation, our team is here to give you honest, expert guidance — completely free of charge. Reach out through any of the channels below.
             </p>
             <div className="contact-details">
               {contactDetails.map(d => (
