@@ -747,12 +747,7 @@ const faqs = [
 ]
 
 function ContactPage() {
-  const [form, setForm] = useState({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' })
-  const [submitted, setSubmitted] = useState(false)
   const [openFaq, setOpenFaq] = useState(null)
-
-  const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
-  const handleSubmit = e => { e.preventDefault(); setSubmitted(true) }
 
   const contactDetails = [
     { icon: '📧', label: 'Email Us', value: 'contact@growthharbour.in', sub: 'We respond within 4 business hours' },
@@ -770,76 +765,23 @@ function ContactPage() {
 
       <section className="section">
         <div className="section-inner">
-          <div className="contact-grid">
-            <div className="contact-info">
-              <div className="section-tag">Get In Touch</div>
-              <h2 className="section-title" style={{ fontSize: '1.8rem' }}>Let's Find the Right <span style={{ color: 'var(--primary)' }}>Loan For You</span></h2>
-              <p style={{ color: 'var(--gray-600)', marginBottom: 32, lineHeight: 1.7 }}>
-                Whether you're ready to apply or just exploring your options, our advisors are here to give you honest, expert guidance — completely free of charge. Fill in the form and a Relationship Manager will get back to you within a few hours.
-              </p>
-              <div className="contact-details">
-                {contactDetails.map(d => (
-                  <div className="contact-item" key={d.label}>
-                    <div className="contact-item-icon">{d.icon}</div>
-                    <div>
-                      <h4>{d.label}</h4>
-                      <p>{d.value}</p>
-                      <span style={{ fontSize: '0.8rem', color: 'var(--gray-600)' }}>{d.sub}</span>
-                    </div>
+          <div className="contact-info" style={{ maxWidth: 600, margin: '0 auto' }}>
+            <div className="section-tag">Get In Touch</div>
+            <h2 className="section-title" style={{ fontSize: '1.8rem' }}>Let's Find the Right <span style={{ color: 'var(--primary)' }}>Loan For You</span></h2>
+            <p style={{ color: 'var(--gray-600)', marginBottom: 32, lineHeight: 1.7 }}>
+              Whether you're ready to apply or just exploring your options, our advisors are here to give you honest, expert guidance — completely free of charge. Reach out to us through any of the channels below.
+            </p>
+            <div className="contact-details">
+              {contactDetails.map(d => (
+                <div className="contact-item" key={d.label}>
+                  <div className="contact-item-icon">{d.icon}</div>
+                  <div>
+                    <h4>{d.label}</h4>
+                    <p>{d.value}</p>
+                    <span style={{ fontSize: '0.8rem', color: 'var(--gray-600)' }}>{d.sub}</span>
                   </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="contact-form">
-              {submitted ? (
-                <div style={{ textAlign: 'center', padding: '60px 0' }}>
-                  <div style={{ fontSize: '3.5rem', marginBottom: 20 }}>🎉</div>
-                  <h3 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: 12 }}>Message Received!</h3>
-                  <p style={{ color: 'var(--gray-600)', lineHeight: 1.7 }}>Thank you for reaching out to Growth Harbour. A dedicated Relationship Manager will contact you within 4 business hours to discuss your requirements in detail.</p>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit}>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: 20 }}>Request a Free Consultation</h3>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>First Name</label>
-                      <input name="firstName" value={form.firstName} onChange={handleChange} placeholder="Ramesh" required />
-                    </div>
-                    <div className="form-group">
-                      <label>Last Name</label>
-                      <input name="lastName" value={form.lastName} onChange={handleChange} placeholder="Gupta" required />
-                    </div>
-                  </div>
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label>Email Address</label>
-                      <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="ramesh@example.com" required />
-                    </div>
-                    <div className="form-group">
-                      <label>Phone Number</label>
-                      <input name="phone" value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" required />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label>Loan Type You're Interested In</label>
-                    <select name="service" value={form.service} onChange={handleChange} required>
-                      <option value="">Select a loan type...</option>
-                      <option>Business Loan</option>
-                      <option>Secured Loan</option>
-                      <option>Unsecured / Personal Loan</option>
-                      <option>Emergency Loan</option>
-                      <option>Government-Sponsored Loan (MUDRA / CGTMSE)</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <label>Tell Us More About Your Requirement</label>
-                    <textarea name="message" value={form.message} onChange={handleChange} placeholder="e.g. I need a ₹15 Lakh business loan for expanding my retail shop. Business is 3 years old with GST filing..." required />
-                  </div>
-                  <button type="submit" className="btn-submit">Send My Request →</button>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--gray-600)', marginTop: 12, textAlign: 'center' }}>🔒 Your information is confidential and will never be shared without your consent.</p>
-                </form>
-              )}
+              ))}
             </div>
           </div>
         </div>
