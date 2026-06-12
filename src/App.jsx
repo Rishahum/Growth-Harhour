@@ -166,7 +166,7 @@ function HomePage() {
             <div className="hero-badge">🚀 India's Trusted Business &amp; Management Consulting Firm</div>
             <h1>Your Growth is <span>Our Priority</span></h1>
             <p>
-              Growth Harbour Private Limited is a premier consulting firm headquartered in New Delhi. We partner with organisations across India to solve their most complex business challenges — from shaping corporate strategy and transforming operations to driving digital innovation and building high-performance teams. Whether you are a startup, an MSME, or a large enterprise, we have the expertise to accelerate your growth.
+              Growth Harbour Private Limited is a premier consulting firm headquartered in Pune, Maharashtra. We partner with organisations across India to solve their most complex business challenges — from shaping corporate strategy and transforming operations to driving digital innovation and building high-performance teams. Whether you are a startup, an MSME, or a large enterprise, we have the expertise to accelerate your growth.
             </p>
             <div className="hero-actions">
               <Link to="/contact" className="btn-primary">Get a Free Consultation</Link>
@@ -427,9 +427,9 @@ function AboutPage() {
   ]
 
   const milestones = [
-    { year: '2025', event: 'Growth Harbour Private Limited incorporated in New Delhi with a founding team of 10 directors.' },
+    { year: '2025', event: 'Growth Harbour Private Limited incorporated in Pune, Maharashtra with a founding team of 10 directors.' },
     { year: '2025', event: 'Launched 5 core consulting practice areas: Strategy, Management, Digital, HR & Talent, and Financial Advisory.' },
-    { year: '2025', event: 'Onboarded first 50 clients across Delhi NCR, spanning technology, retail, and financial services sectors.' },
+    { year: '2025', event: 'Onboarded first 50 clients across Pune, Maharashtra, spanning technology, retail, and financial services sectors.' },
     { year: '2026', event: 'Expanded team to 50+ consultants and analysts; crossed 200 project deliveries across 10+ industries.' },
   ]
 
@@ -461,7 +461,7 @@ function AboutPage() {
                 Founded by a team of 10 seasoned business professionals — each with deep expertise in strategy, operations, technology, and people management — Growth Harbour operates at the intersection of insight, execution, and trust. We don't just hand over reports and walk away; we become embedded partners who stay accountable for outcomes long after the engagement ends.
               </p>
               <p className="about-para">
-                Our practice spans 5 core consulting areas — Strategy, Management, Digital Transformation, HR & Talent, and Financial Advisory — serving clients across 10+ industries including financial services, technology, retail, manufacturing, and healthcare across Delhi NCR and beyond.
+                Our practice spans 5 core consulting areas — Strategy, Management, Digital Transformation, HR & Talent, and Financial Advisory — serving clients across 10+ industries including financial services, technology, retail, manufacturing, and healthcare across Pune, Maharashtra and beyond.
               </p>
             </div>
           </div>
@@ -530,7 +530,7 @@ function AboutPage() {
           {[
             { num: '10+', desc: 'Industries Served', sub: 'From startups to enterprises' },
             { num: '200+', desc: 'Projects Delivered', sub: 'Across all practice areas' },
-            { num: '50+', desc: 'Expert Consultants', sub: 'Across Delhi NCR' },
+            { num: '50+', desc: 'Expert Consultants', sub: 'Across Pune, Maharashtra' },
             { num: '95%', desc: 'Client Retention Rate', sub: 'Consistently year-on-year' }
           ].map(s => (
             <div className="stat-box" key={s.desc}>
@@ -619,8 +619,8 @@ function DirectorsPage() {
             <div className="cin-bar">
               <span>Company Type: Private Limited</span>
               <span>Category: Company Limited by Shares</span>
-              <span>Registered Office: New Delhi, India</span>
-              <span>ROC: RoC-Delhi</span>
+              <span>Registered Office: Pune, Maharashtra</span>
+              <span>ROC: RoC-Pune</span>
             </div>
           </div>
         </div>
@@ -638,7 +638,7 @@ const testimonials = [
     quote: 'Growth Harbour\'s strategy team helped us completely rethink our go-to-market approach. Within 3 months of implementing their recommendations, our revenue from new customer segments grew by 40%. Their consultants didn\'t just hand over a slide deck — they stayed with us through execution and made sure the strategy actually landed.',
     avatar: '👨‍💼',
     name: 'Ramesh Gupta',
-    title: 'Founder & CEO, Gupta Retail Group, Delhi',
+    title: 'Founder & CEO, Gupta Retail Group, Pune',
     loan: 'Strategy Consulting Engagement'
   },
   {
@@ -662,7 +662,7 @@ const testimonials = [
     quote: 'As we scaled from 30 to 120 employees in under two years, our HR processes simply couldn\'t keep up. Growth Harbour built our entire people infrastructure — from appraisal systems and compensation bands to culture programmes and a proper onboarding process. Our attrition dropped from 34% to 11% within a year.',
     avatar: '👩‍💼',
     name: 'Anjali Desai',
-    title: 'Co-founder, Desai Digital, South Delhi',
+    title: 'Co-founder, Desai Digital, Pune',
     loan: 'HR & Talent Consulting Engagement'
   },
   {
